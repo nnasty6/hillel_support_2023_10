@@ -1,0 +1,13 @@
+.DS_Store
+
+# Editors
+.idea
+.vscode/
+
+__pycache__/
+
+# Storages
+*.sqlite3
+
+# Temporary files for making HW
+*.json
