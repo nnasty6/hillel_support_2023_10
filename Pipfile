@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Django = "~=4.2"
+djangorestframework = "~=3.14"
+djangorestframework-simplejwt = {version = "~=5.3", extras = ["crypto"]}
+pydantic = "~=2.4"
+requests = "~=2.31"
+
+[dev-packages]
+black = "~=23.7"
+flake8 = "~=6.1"
+grequests = "*"
+isort = "~=5.12"
+mypy = "~=1.5"
+pre-commit = "*"
+pympler = "~=1.0"
+ruff = "~=0.0.291"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+app = "python3 src/manage.py runserver"
